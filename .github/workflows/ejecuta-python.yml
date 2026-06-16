@@ -7,5 +7,7 @@ jobs:
     steps:
         - run: echo "Iniciando actions"
         - run: python --version
+        - run: Check out repository code
+        - run: actions/checkout@v6
         - run: ls -als
         - run: python app.py
