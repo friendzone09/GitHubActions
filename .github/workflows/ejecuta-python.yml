@@ -1,0 +1,11 @@
+name: Ejecucion de python
+run-name: ${{ github.actor }} esta corriendo un archivo de python
+on: [push]
+jobs:
+  ejecuta-script-python:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo"Iniciando actions"
+        - run: python --version
+        - run: ls -als
+        - run: python app.py
