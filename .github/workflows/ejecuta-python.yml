@@ -5,7 +5,7 @@ jobs:
   ejecuta-script-python:
     runs-on: ubuntu-latest
     steps:
-        - run: echo"Iniciando actions"
+        - run: echo "Iniciando actions"
         - run: python --version
         - run: ls -als
         - run: python app.py
