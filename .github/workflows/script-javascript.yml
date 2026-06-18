@@ -1,0 +1,13 @@
+name: Ejecucion de JS
+run-name: ${{ github.actor }} esta corriendo un archivo de Js
+on: [push]
+jobs:
+  ejecuta-script-JavaScript:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "Iniciando actions"
+        - run: node --version
+        - name: Check out repository code
+          uses: actions/checkout@v6
+        - run: ls -al
+        - run: node app.js
