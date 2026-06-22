@@ -9,7 +9,7 @@ on:
         types: [opened, edited, closed]
     
     schedule:
-        - cron: '55 10 * * *'
+        - cron: '0 * * * *'
 
 
 jobs:
